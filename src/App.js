@@ -19,7 +19,7 @@ export default function App(){
       <div className="App">
         <ThemeProvider theme={createMuiTheme}>
           <AppBar position="static" setOpen={() => setMenuOpen(!menuOpen)} onClick={() => setMenuOpen(!menuOpen)} open={menuOpen}/>
-          <img src={items ? `https://ubisoft-avatars.akamaized.net/${items.p_user}/default_146_146.png` : null}/>
+          <img alt='user-avatar' src={items ? `https://ubisoft-avatars.akamaized.net/${items.p_user}/default_146_146.png` : null}/>
           <div>{JSON.stringify(items)}</div>
         </ThemeProvider>
       </div>
